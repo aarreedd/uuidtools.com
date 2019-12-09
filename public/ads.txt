@@ -1,0 +1,81 @@
+google.com, pub-8501674430909082, DIRECT #banner
+google.com, pub-8501674430909082, RESELLER #banner
+adtech.com, 9570, DIRECT #banner
+aolcloud.net, 9570, DIRECT #banner
+sovrn.com, 214800, DIRECT, fafdf38b16bf6b2b #banner
+lijit.com, 214800, DIRECT, fafdf38b16bf6b2b #banner
+sovrn.com, 247572, DIRECT, fafdf38b16bf6b2b #banner
+lijit.com, 247572, DIRECT, fafdf38b16bf6b2b #banner
+indexexchange.com, 182496, DIRECT #video, banner
+openx.com, 537143229, DIRECT #banner
+sonobi.com, 3f0e51cba3, DIRECT, d1a215d9eb5aee9e #banner
+appnexus.com, 3561, DIRECT #banner
+gumgum.com, 11685, DIRECT #video, banner
+districtm.io, 100319, DIRECT, 3fd707be9c4527c3 #banner
+appnexus.com, 1908, RESELLER #banner
+appnexus.com, 1356, RESELLER #banner
+EMXDGT.com, 31, DIRECT, 1e1d41537f7cad7f #banner
+sekindo.com, 18727, DIRECT #video
+spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34 #video
+spotx.tv, 84294, RESELLER, 7842df1d2fe2db34 #video
+advertising.com, 7372, RESELLER #video
+advertising.com, 24410, RESELLER #video
+improvedigital.com, 1065, RESELLER #video
+pubmatic.com, 156595, RESELLER, 5d62403b186f2ace #video
+freewheel.tv, 735378, DIRECT #video
+freewheel.tv, 735394, DIRECT #video
+indexexchange.com, 186035, RESELLER #video, banner
+openx.com, 539404983, DIRECT, 6a698e2ec38604c6 #banner
+triplelift.com, 4800, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 4801, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 4802, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 4803, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 4804, DIRECT, 6c33edb13117fd86 #banner
+aps.amazon.com, 4fbba76f-7987-4fa2-9733-c27eb3a2170b, DIRECT #banner
+rubiconproject.com, 17698, DIRECT #video, banner
+rubiconproject.com, 9262, DIRECT #video, banner
+media.net, 8CUU1EN3Y, DIRECT #banner
+districtm.io, 100962, RESELLER #banner
+appnexus.com, 1908, RESELLER, f5ab79cb980f11d1 #banner
+pubmatic.com, 157333, DIRECT, 5d62403b186f2ace #banner
+pubmatic.com, 157347, DIRECT, 5d62403b186f2ace #banner
+triplelift.com, 5895, DIRECT, 6c33edb13117fd86 #banner
+undertone.com, 2002, DIRECT #banner
+appnexus.com, 2234, RESELLER #banner
+openx.com, 537153564, RESELLER, 6a698e2ec38604c6 #banner
+beachfront.com, 12350, DIRECT, e2541279e8e2ca4d #video, banner
+33across.com, 0013300001i0fyfAAA, DIRECT, bbea06d9c4d2853c #banner
+media.net, 8CUH2EUJ4, DIRECT #banner
+rhythmone.com, 2693636657, DIRECT, a670c89d4a324e47 #banner
+teads.tv, 17002, DIRECT, 15a9c44f6d26cbe1 #video
+pubmatic.com, 157150, RESELLER, 5d62403b186f2ace #banner
+openx.com, 540191398, RESELLER, 6a698e2ec38604c6 #banner
+rubiconproject.com, 18020, RESELLER, 0bfd66d529a55807 #banner
+lkqd.net, 504, RESELLER, 59c49fa9598a0117 #video
+spotxchange.com, 228454, RESELLER, 7842df1d2fe2db34 #video
+spotx.tv, 228454, RESELLER, 7842df1d2fe2db34 #video
+33across.com, 0013300001r0t9mAAA, RESELLER #gumgum in screen
+adtech.com, 12068, RESELLER #banner
+video.unrulymedia.com, UNRX-PUB-e1b123d0-0bf1-4c85-80ef-8d6ff2d77f8d, DIRECT #video
+triplelift.com, 5825, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6286, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6287, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6288, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6289, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6290, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6291, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6292, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6293, DIRECT, 6c33edb13117fd86 #banner
+triplelift.com, 6294, DIRECT, 6c33edb13117fd86 #banner
+oathprebid.com, 108, DIRECT #banner
+pubmatic.com, 157852, DIRECT, 5d62403b186f2ace #banner
+yieldmo.com, 2144304518241355475, DIRECT #banner
+google.com, pub-0583047843012866, DIRECT, f08c47fec0942fa0
+freewheel.tv, 939281, RESELLER #video
+freewheel.tv, 939569, RESELLER #video
+rubiconproject.com, 20130, RESELLER, 0bfd66d529a55807 #video
+openx.com, 540258065, RESELLER, 6a698e2ec38604c6 #video
+lkqd.net, 244, RESELLER, 59c49fa9598a0117 #video
+appnexus.com, 1314, RESELLER, 6c33edb13117fd86 #banner
+vdopia.com, 14360, DIRECT #video, banner
+chocolateplatform.com, 14360, DIRECT #video, banner

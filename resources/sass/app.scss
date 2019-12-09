@@ -1,0 +1,38 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// fontawesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/animated';
+
+// Variables
+@import 'variables';
+
+// Your variable overrides can go here, e.g.:
+// $h1-font-size: 3rem;
+
+// Bootswatch
+@import "~bootswatch/dist/united/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/united/bootswatch";
+
+
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.border-3 {
+	border-width:3px!important;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+
+code {
+	color: #868e96!important;
+}

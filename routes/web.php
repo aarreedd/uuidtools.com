@@ -12,11 +12,11 @@
 */
 
 Route::get('/', 'GeneratorController@index');
-Route::get('/generator/bulk', 'GeneratorController@bulk');
-Route::get('/generator/{version?}', 'GeneratorController@index');
+Route::get('/generate/bulk', 'GeneratorController@bulk');
+Route::get('/generate/{version?}', 'GeneratorController@index');
 
-Route::get('/generate/{anything?}', function($anything = null) {
-	return redirect('/generator/' . $anything);
+Route::get('/generator/{anything?}', function($anything = null) {
+	return redirect('/generate/' . $anything);
 });
 
 Route::get('/decode', 'GeneratorController@decode');

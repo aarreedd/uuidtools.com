@@ -14,16 +14,17 @@
 						UUID Generator
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="/generator">UUID Generator Tool</a>
+						<a class="dropdown-item" href="/generate">UUID Generator Tool</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/generator/v1">Version-1 UUID</a>
-						<a class="dropdown-item" href="/generator/v3">Version-3 UUID</a>
-						<a class="dropdown-item" href="/generator/v4">Version-4 UUID</a>
-						<a class="dropdown-item" href="/generator/v5">Version-5 UUID</a>
-						<a class="dropdown-item" href="/generator/timestamp-first">Timestamp-first UUID</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/generator/bulk">Bulk UUID Generator</a>
+						<a class="dropdown-item" href="/generate/v1">v1 UUID Generator</a>
+						<a class="dropdown-item" href="/generate/v3">v3 UUID Generator</a>
+						<a class="dropdown-item" href="/generate/v4">v4 UUID Generator</a>
+						<a class="dropdown-item" href="/generate/v5">v5 UUID Generator</a>
+						<a class="dropdown-item" href="/generate/timestamp-first">Timestamp-first UUIDs</a>						
 					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/generate/bulk">Bulk UUID Generator </a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/decode">UUID Decoder </a>

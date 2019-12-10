@@ -96,7 +96,7 @@
 						<tr><td>6 - f, 0</td><td class="text-muted">version unknown</td></tr>
 					</tobdy>
 				</table>
-				<p class="mb-5"><i class="text-muted small">&dagger; RFC 4122 reserves version-2 for "DCE security" UUIDs however no details are provided. For this reason, we omit version-2 from our <a href="/generator">UUID generator</a>.</i></p>
+				<p class="mb-5"><i class="text-muted small">&dagger; RFC 4122 reserves version-2 for "DCE security" UUIDs however no details are provided. For this reason, we omit version-2 from our <a href="/generate">UUID generator</a>.</i></p>
 
 				<p>
 					The variant is slightly more complicated.

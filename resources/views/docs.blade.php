@@ -41,7 +41,7 @@
 				<p>
 					We support generating all major UUID versions including version-1, version-3, version-4, version-5 and "timestamp-first" UUIDs.
 					Read more about <a href="/uuid-versions-explained">different UUID versions</a>.
-					No authentication is required. This is the same API that powers our <a href="/geneator">UUID generator</a>.
+					No authentication is required. This is the same API that powers our <a href="/generate">UUID generator</a>.
 				</p>
 				<p>
 					Endpoints that accept a count argument allow you to create up to 100 UUIDs at once.
@@ -116,7 +116,7 @@
 				<p>Namespace must be "ns:url", "ns:dns", "ns:OID", "ns:X500" or a properly formatted UUID. Name is a string of any length.</p>
 
 				<p>
-					<code><pre>https://www.uuidtools.com/api/generate/v5/namespace/ns:url/name/https://www.uuidtools.com/generator</pre></code>
+					<code><pre>https://www.uuidtools.com/api/generate/v5/namespace/ns:url/name/https://www.uuidtools.com/generate</pre></code>
 				</p>
 				<p>
 					<code><pre>https://www.uuidtools.com/api/generate/v5/namespace/b01eb720-171a-11ea-b949-73c91bba743d/name/anything-goes-here</pre></code>

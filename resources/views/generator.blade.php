@@ -9,7 +9,6 @@
 	<title>Online UUID Generator | {{ config('app.name') }}</title>
 	<meta name="description" content="Free UUID/GUID Generator Tool. Create single or bulk UUIDs. UUID v1, v3, v4, and v5. "/>
 
-	<link rel="canonical" href="https://www.uuidtools.com/" />
 @endsection
 
 {{-- ============================================================================== --}}
@@ -84,7 +83,7 @@
 							<a href="/uuid-versions-explained" class="btn btn-outline-primary btn-block">UUID Versions</a>
 						</div>
 						<div class="col-sm-4 mb-2">
-							<a href="/generator/bulk" class="btn btn-outline-primary btn-block text-nowrap">Bulk UUID Generator</a>
+							<a href="/generate/bulk" class="btn btn-outline-primary btn-block text-nowrap">Bulk UUID Generator</a>
 						</div>
 					</div>
 				</p>

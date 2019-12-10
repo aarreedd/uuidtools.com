@@ -13,7 +13,7 @@
 	</div>
 	<button class="btn btn-primary btn-lg" id="generate-single"> Generate Another <i class="fas fa-redo-alt"></i> </button>
 
-	<p class="mt-2 mb-0"><a href="/generator/bulk">Bulk UUID Generator</a></p>
+	<p class="mt-2 mb-0"><a href="/generate/bulk">Bulk UUID Generator</a></p>
 
 </div>
 

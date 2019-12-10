@@ -100,7 +100,7 @@
 					When a pre-defined namespace identifier is used  we convert the identifier to UUID internally.
 				</p>
 				<p>
-					When using our <a href="/generator/v3">version-3</a> or <a href="/generator/v3">version-5</a> UUID generators you will be asked to enter a "namespace" and "name".
+					When using our <a href="/generate/v3">version-3</a> or <a href="/generate/v3">version-5</a> UUID generators you will be asked to enter a "namespace" and "name".
 				</p>
 
 				<a href="#" name=version-4></a>

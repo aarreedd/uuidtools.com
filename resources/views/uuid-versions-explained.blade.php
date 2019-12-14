@@ -138,7 +138,7 @@
 					There are two main reason for beginning UUIDs with the current timestamp:
 					<ol>
 						<li>When sorting by UUID they will appear in the order created</li>
-						<li>Ordered UUIDs can be more efficiently stored indexed columns in databases compared to random UUIDs</li>
+						<li>Ordered UUIDs can be more efficiently stored in indexed databases columns compared to random UUIDs</li>
 					</ol>
 				</p>
 				<p>

@@ -6,8 +6,10 @@
 
 @section('seo-meta')
 	<!-- Page-specific meta tags -->
-	<title>Online UUID Generator | {{ config('app.name') }}</title>
-	<meta name="description" content="Free UUID/GUID Generator Tool. Create single or bulk UUIDs. UUID v1, v3, v4, and v5. "/>
+	<title>{{ $version->meta_title }}</title>
+	<meta name="description" content="{{ $version->description }}"/>
+
+	<link rel="canonical" href="{{ $version->canonical }}" />
 
 @endsection
 

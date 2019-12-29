@@ -16,37 +16,36 @@
 {{-- ============================================================================== --}}
 @section('content')
 
-	<section class="jumbotron text-center">
-		<div class="container">
-			<h1 class="jumbotron-heading">What's a UUID?</h1>
-			<p class="lead text-muted">What are Universal Unique Identifiers and how do they work?</p>
-		</div>
-	</section>
-
 	<div class="container mt-4">
 
 		@component('components.breadcrumbs')
 			<li class="breadcrumb-item active" aria-current="page">What are UUIDs?</li>
 		@endcomponent
 
+		<h1 class="border-bottom mb-4 border-primary border-3 font-weight-bold">
+			<i class="fas fa-fingerprint text-primary"></i>
+			What's a UUID? <br>
+			<span class="text-muted small">What are Universal Unique Identifiers and how do they work?</span>
+		</h1>
+
 		<div class="row">
 			<div class="col-md-8 order-12 order-md-1">
 
 				<a href="#" name=overview></a>
-				<h2 class="mt-4">Overview</h2>
+				<h2>Overview</h2>
 
 				<p>
 					UUID stands for <b>Universally Unique Identifier</b> (sometimes called "GUID" or "Globally Unique Identifiers").
-					UUIDs are 36 character strings containing numbers, letters and dashes. 
+					UUIDs are 36 character strings containing numbers, letters and dashes.
 					UUIDs are designed to be globally unique.
 				</p>
 				<p>
 					There are several <a href="/uuid-versions-explained">UUID versions</a> with slightly different purposes.
-					In UUID version-4, which is completely random, there are approximately 5.3 x 10<sup>36</sup> possible UUIDs. 
+					In UUID version-4, which is completely random, there are approximately 5.3 x 10<sup>36</sup> possible UUIDs.
 					This number is so large that if you were to generate 1 billion UUIDs per second for 85 you have a 50% chance of creating a duplicate.
 				</p>
 				<p>
-					The chances of a duplicate UUID are so low it is safe to assume each ID will be unique. 
+					The chances of a duplicate UUID are so low it is safe to assume each ID will be unique.
 					Separate computers can generate UUIDs at the same time with no communication and still be confident the UUIDs are unique.
 					Independent systems that use UUIDs can be safely merged at any time without worrying about collisions.
 				</p>
@@ -96,11 +95,11 @@
 				<a href="#" name=collisions></a>
 				<h2 class="mt-4">Can a UUID be repeated?</h2>
 				<p>
-					UUID collisions are extremely unlikely. 
+					UUID collisions are extremely unlikely.
 				</p>
 				<p>
 					With UUID version-1 the MAC address of the computer generating the UUID in embedded in the UUID.
-					MAC Addresses are unique on every computer with a network card. 
+					MAC Addresses are unique on every computer with a network card.
 					This makes it impossible for 2 different computers to generate the same UUID if both adhere to the specification.
 					The timestamp is also including in the UUID to ensure uniqueness.
 					The timestamp field will rollover in 5236 AD. So there is no chance of duplicate until then.
@@ -164,7 +163,16 @@
 {{-- ==                               Page Scripts                               == --}}
 {{-- ============================================================================== --}}
 @push('scripts')
-<script>
-	// Page specific JS goes here...
-</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "What are UUIDs?",
+			"item": "https://www.uuidtools.com/what-is-uuid"
+		}]
+	}
+	</script>
 @endpush

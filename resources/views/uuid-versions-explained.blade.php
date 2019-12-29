@@ -16,18 +16,17 @@
 {{-- ============================================================================== --}}
 @section('content')
 
-	<section class="jumbotron text-center">
-		<div class="container">
-			<h1 class="jumbotron-heading">UUID Versions Explained</h1>
-			<p class="lead text-muted">Why are there so many UUID versions and when to use them?</p>
-		</div>
-	</section>
-
 	<div class="container mt-4">
 
 		@component('components.breadcrumbs')
 			<li class="breadcrumb-item active" aria-current="page">UUID Versions Explained</li>
 		@endcomponent
+
+		<h1 class="border-bottom mb-4 border-primary border-3 font-weight-bold">
+			<i class="fas fa-fingerprint text-primary"></i>
+			UUID Versions Explained <br>
+			<span class="text-muted small">What are the different UUID versions and how to use them?</span>
+		</h1>
 
 		<div class="row">
 			<div class="col-md-8 order-12 order-md-1">
@@ -143,7 +142,7 @@
 				</p>
 				<p>
 					There are several variations of timestamp-first UUIDs in different implementations because there is not agreed upon specification.
-					However, generally the first 8 hex digits represent the time and the remaining digits are random. 
+					However, generally the first 8 hex digits represent the time and the remaining digits are random.
 				</p>
 				<p>
 					If you are using UUIDs as a primary key in a database you should use timestamp-first UUIDs.
@@ -190,7 +189,16 @@
 {{-- ==                               Page Scripts                               == --}}
 {{-- ============================================================================== --}}
 @push('scripts')
-<script>
-	// Page specific JS goes here...
-</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "UUID Versions Explained",
+			"item": "https://www.uuidtools.com/uuid-versions-explained"
+		}]
+	}
+	</script>
 @endpush

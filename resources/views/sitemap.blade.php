@@ -14,17 +14,13 @@
 {{-- ============================================================================== --}}
 @section('content')
 
-	<section class="jumbotron text-center">
-		<div class="container">
-			<h1 class="jumbotron-heading">Sitemap</h1>
-		</div>
-	</section>
-
 	<div class="container mt-4">
 
 		@component('components.breadcrumbs')
 			<li class="breadcrumb-item active" aria-current="page">Sitemap</li>
 		@endcomponent
+
+		<h1 class="border-bottom mb-4 border-primary border-3 font-weight-bold"><i class="fas fa-fingerprint text-primary"></i> Sitemap </h1>
 
 		<div class="row">
 			<div class="col-md-8 order-12 order-md-1">

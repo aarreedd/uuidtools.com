@@ -36,3 +36,8 @@
 code {
 	color: #868e96!important;
 }
+
+.bg-light-hover:hover {
+	background-color: #f7f7f7;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

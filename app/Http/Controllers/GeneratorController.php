@@ -13,8 +13,17 @@ class GeneratorController extends Controller
 		return view('bulk-generator');
 	}
 
+	function index()
+	{
+		return view('generator-index');
+	}
 
-	function index($version = 'default')
+	function decode()
+	{
+		return view('decode');
+	}
+
+	function showGenerator($version = 'default')
 	{
 		$versions = [
 			'default' => [
@@ -32,7 +41,7 @@ class GeneratorController extends Controller
 				'dropdownSelected' => 'Version-1 UUID',
 				'url' => '/generator/v1',
 				'description' => 'Free online UUID v1 Generator. Create version-1 UUIDs according to RFC 4122 instantly. Version-1 UUIDs are based on time and MAC Address.',
-				'canonical' => 'https://www.uuidtools.com/generate/v1',
+				'canonical' => 'https://www.uuidtools.com',
 				'meta_title' => 'Online UUID (v1) Generator | UUIDTools.com',
 			],
 			'v3' => [
@@ -89,11 +98,5 @@ class GeneratorController extends Controller
 		$totalUuids = optional($count)->value + Cache::get('total-uuids', 0);
 
 		return view('generator', compact('version', 'otherOptions', 'totalUuids'));
-	}
-
-
-	function decode()
-	{
-		return view('decode');
 	}
 }

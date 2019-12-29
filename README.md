@@ -8,6 +8,10 @@ This project is written using [Laravel](https://laravel.com/).
 
 [status.uuidtools.com](https://status.uuidtools.com/)
 
+## API Documentation
+
+We provide a free UUID generator API. [See documentation](https://www.uuidtools.com/docs).
+
 ## Contributing
 
 Please [contact us](https://www.uuidtools.com/contact) if you are interested in contributing.

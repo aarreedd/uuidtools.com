@@ -68,7 +68,7 @@
 				</p>
 				<h3>Why use an online UUID generator?</h3>
 				<p>
-					Most programming languages have a simple way to generate UUIDs. 
+					Most programming languages have a simple way to generate UUIDs.
 					But, sometimes you might just need a single UUID and do not want to write any code.
 				</p>
 				<p>
@@ -111,4 +111,23 @@
 {{-- ==                               Page Scripts                               == --}}
 {{-- ============================================================================== --}}
 @push('scripts')
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Generate Tools List",
+			"item": "https://www.uuidtools.com/generate"
+		},{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "{{ $version->title }}",
+			"item": "{{ $version->canonical }}"
+		}]
+	}
+	</script>
+
 @endpush

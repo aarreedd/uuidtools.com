@@ -14,18 +14,11 @@
 {{-- ============================================================================== --}}
 @section('content')
 
-	<section class="jumbotron text-center">
-		<div class="container">
-			<h1 class="jumbotron-heading">Contact Us</h1>
-		</div>
-	</section>
-
-
 	<div class="container mt-4">
 
 		<div class="row">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxoeA8XMJE-ybji8lT1_RselJp8xhd6ZynvUdruxr06f_Img/viewform?embedded=true" style="width:100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>		</div>
-
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxoeA8XMJE-ybji8lT1_RselJp8xhd6ZynvUdruxr06f_Img/viewform?embedded=true" style="width:100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		</div>
 
 	</div>
 @endsection

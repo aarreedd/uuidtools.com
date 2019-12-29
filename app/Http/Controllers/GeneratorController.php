@@ -69,6 +69,7 @@ class GeneratorController extends Controller
 				'url' => '/generator/v5',
 				'description' => 'Free online UUID v5 Generator. Create version-5 UUIDs according to RFC 4122 instantly. Version-5 UUIDs are based on SHA-1 hash of a namespace and name.',
 				'canonical' => 'https://www.uuidtools.com/generate/v5',
+				'meta_title' => 'Online UUID (v5) Generator | UUIDTools.com',
 			],
 			'timestamp-first' => [
 				'api' => 'timestamp-first',

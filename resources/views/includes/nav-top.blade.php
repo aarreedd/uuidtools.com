@@ -33,7 +33,7 @@
 					<a class="nav-link" href="/docs">API Docs </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/what-is-uuid">What is UUID? </a>
+					<a class="nav-link" href="/what-is-uuid">What's a UUID? </a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/uuid-versions-explained">Versions Explained </a>

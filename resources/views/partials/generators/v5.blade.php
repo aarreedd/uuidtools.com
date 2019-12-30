@@ -8,14 +8,14 @@
 			<span class="cursor-pointer text-primary" data-toggle="tooltip" title='The namespace must be a valid UUID or an identifier for internally pre-defined namespace UUIDs (currently known are "ns:DNS", "ns:URL", "ns:OID", and "ns:X500"). Check this toggle to select a pre-defined UUID identifier.'><i class="fas fa-question-circle"></i></span>
 		</div>
 
-		<div class="form-group" id="custom-namespace">
-			<input type="text" autocomplete="off" class="form-control form-control-lg text-center" id="namespace-custom-input" aria-describedby="namespaceHelpCustom" placeholder="Enter Namespace UUID" required pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}">
+		<div class="form-group mb-5" id="custom-namespace">
+			<input type="text" autocomplete="off" class="form-control form-control-lg text-center" id="namespace-custom-input" aria-describedby="namespaceHelpCustom" placeholder="Namespace (00000000-0000-0000-0000-000000000000)" required pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}">
 			<small id="namespaceHelpCustom" class="form-text text-muted">
 				The namespace must be a valid UUIDs in the format 00000000-0000-0000-0000-000000000000. Toggle the switch above to select a pre-defined UUID or <a href="#" id="autofill">autofill with random UUID <i class="fas fa-random"></i></a>
 			</small>
 		</div>
 
-		<div class="form-group" id="predefined-namespace" style="display:none;">
+		<div class="form-group mb-5" id="predefined-namespace" style="display:none;">
 			<select class="form-control form-control-lg text-center" style="text-align-last: center;" id="namespace-predefined-input" aria-describedby="namespaceHelpPredefined">
 				<option class="text-center" value="ns:dns">ns:DNS - for domain names</option>
 				<option class="text-center" value="ns:url">ns:URL - for URLs</option>
@@ -27,8 +27,8 @@
 			</small>
 		</div>
 
-		<div class="form-group">
-			<input type="text" autocomplete="off" class="form-control form-control-lg text-center" id="name" aria-describedby="nameHelp" placeholder="Enter Name" required>
+		<div class="form-group mb-5">
+			<input type="text" autocomplete="off" class="form-control form-control-lg text-center" id="name" aria-describedby="nameHelp" placeholder="Name (anything)" required>
 			<small id="nameHelp" class="form-text text-muted">
 				Required. Name can be anything. The same namespace with the same name will always produce the same UUID.
 			</small>
@@ -49,15 +49,17 @@
 					<h3 class='ml-3 pt-3 float-left'>Results:</h3>
 					<div class="float-right mr-2 pt-3">
 						<span id="copied-label" class="text-primary mr-2" style="display: none;">copied!</span>
-						<input id="api-copy-input" type="text" style="position:absolute; top: -9999px; z-index: -9;" value="">
-						<input id="single-copy-input" type="text" style="position:absolute; top: -9999px; z-index: -9;" value="">
-						<button id="api-copy-button" class="btn btn-outline-primary btn-sm"> <i class="fas fa-code"></i> Copy API Call </button>
+						<input id="api-copy-input" class="input-offscreen" type="text" value="">
+						<input id="single-copy-input" class="input-offscreen" type="text" value="">
 						<button id="uuid-copy-button" class="btn btn-outline-primary btn-sm"> <i class="fas fa-code"></i> Copy UUID </button>
+						<button id="api-copy-button" class="btn btn-outline-primary btn-sm"> <i class="fas fa-code"></i> Copy API Call </button>
 					</div>
 				</div>
 
 				<div class="text-center mx-4 my-5">
-					<code id="results"></code>
+					<div class="form-group row">
+						<input class="form-control form-control-xl text-monospace text-center font-weight-bold form-control-clear overflow-hidden" id="results" type="text" readonly onclick="select()">
+					</div>
 				</div>
 
 			</div>
@@ -77,7 +79,7 @@
 		} else {
 			input = $('<input>').attr({
 				autocomplete: "off", class: "form-control form-control-lg text-center",
-				id: "namespace-custom-input", type: "text", placeholder: "Enter Namespace UUID",
+				id: "namespace-custom-input", type: "text", placeholder: "Namespace (00000000-0000-0000-0000-000000000000)",
 				required: 'true', pattern: "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
 				"aria-describedby": "namespaceHelpCustom"
 			})
@@ -138,8 +140,7 @@
 			url: url,
 			success: function(data) {
 				$('.error').html("");
-				fitty('#results');
-				$('#results').html(data[0]);
+				$('#results').val(data[0]);
 				$('#single-copy-input').val(data[0]);
 				$('#results-wrapper').slideDown();
 			},

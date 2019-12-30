@@ -22,7 +22,7 @@
 
 		<h1 class="border-bottom border-primary border-3 mb-0 font-weight-bold"><i class="fas fa-fingerprint text-primary"></i> {{ $version->title }}</h1>
 
-		<div class="card mb-0 bg-light">
+		<div class="card mb-0 border-2 border-top-0 border-bottom-rounded bg-light">
 			<div class="card-body">
 
 				<div class="btn-group btn-block">
@@ -44,12 +44,7 @@
 			</div>
 		</div>
 
-
-		<div class="mt-2 mb-3">
-			<div class="fb-like" data-href="https://www.uuidtools.com" data-width="" data-layout="standard" data-action="recommend" data-size="large" data-show-faces="false" data-share="true"></div>
-		</div>
-
-
+		@include('partials.fb-like')
 
 		<div class="row mb-3 mt-5">
 			<div class="col-md-8 order-12 order-md-1">

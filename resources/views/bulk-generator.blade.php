@@ -63,9 +63,7 @@
 			</div>
 		</div>
 
-		<div class="mb-3">
-			<div class="fb-like" data-href="https://www.uuidtools.com" data-width="" data-layout="standard" data-action="recommend" data-size="large" data-show-faces="false" data-share="true"></div>
-		</div>
+		@include('partials.fb-like')
 
 		<div class="row mb-3 mt-5">
 			<div class="col-md-8 order-12 order-md-1">
@@ -79,12 +77,12 @@
 				<p>
 					You can download the list of generated UUIDs or use our API to generate UUIDs automatically.
 					There is a button above to copy the exact API call you need to generate bulk UUIDs.
-					You can be confident that the UUIDs generated will be globally unique. 
+					You can be confident that the UUIDs generated will be globally unique.
 					Statistically it is extraordinarily unlikely that our system will ever generate the same exact UUID twice.
 				</p>
 				<p>
 					You cannot generate <a href="/generate/v3">version-3</a> and <a href="/generate/v3">version-5</a> UUIDs in bulk because they require unique input for each UUID.
-					You must generate each one individually. 
+					You must generate each one individually.
 				</p>
 
 			</div>
@@ -165,5 +163,23 @@
 		});
 	}
 
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "Generate Tools",
+		"item": "https://www.uuidtools.com/generate"
+	},
+	{
+		"@type": "ListItem",
+		"position": 2,
+		"name": "Bulk UUID Generator",
+		"item": "https://www.uuidtools.com/generate/bulk"
+	}]
+}
 </script>
 @endpush

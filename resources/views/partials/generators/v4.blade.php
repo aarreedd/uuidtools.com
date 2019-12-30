@@ -1,10 +1,12 @@
 <div class="text-center">
 
 	<div class="mb-5 mt-5">
-		<code id="single-uuid" class="mb-0"></code>
+		<div class="form-group row">
+			<input class="form-control form-control-xl text-monospace text-center font-weight-bold form-control-clear overflow-hidden" id="single-uuid" type="text" readonly onclick="select()">
+		</div>
 		<div class="clearfix">
-			<input id="single-copy-input" type="text" style="position:absolute; top: -9999px; z-index: -9;">
-			<input id="api-copy-input" type="text" style="position:absolute; top: -9999px; z-index: -9;" value="https://www.uuidtools.com/api/generate/v4/count/1">
+			<input id="single-copy-input" class="input-offscreen" type="text">
+			<input id="api-copy-input" class="input-offscreen" type="text" value="https://www.uuidtools.com/api/generate/v4/count/1">
 			<button id="api-copy-button" class="btn btn-outline-primary btn-sm float-right ml-2"> <i class="fas fa-code"></i> Copy API Call </button>
 			<button id="copy-button" class="btn btn-outline-primary btn-sm float-right"> <i class="far fa-copy"></i> Copy UUID </button>
 			<span id="copied-label" class="float-right text-primary mr-2" style="display: none;">copied!</span>
@@ -22,7 +24,6 @@
 
 	$(document).ready(function() {
 		refresh_uuid();
-		fitty('#single-uuid');
 	});
 
 	$('#generate-single').on('click', function() {
@@ -47,7 +48,7 @@
 			url: "/api/generate/v4",
 			success: function(data) {
 				$('.error').html("");
-				$('#single-uuid').html(data[0]);
+				$('#single-uuid').val(data[0]);
 				$('#single-copy-input').val(data[0]);
 			},
 			error: function(jqXHR, textStatus, errorThrown) {

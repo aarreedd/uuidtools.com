@@ -6,7 +6,7 @@
 
 @section('seo-meta')
 	<!-- Page-specific meta tags -->
-	<title>List of UUID Generators | UUIDTools.com</title>
+	<title>List of UUID Generators | {{ config('app.name') }}</title>
 	<meta name="description" content="List of UUID Generator Tools. Generate version-1, version-3, version-4, version-5, and time-based UUIDs. "/>
 
 	<link rel="canonical" href="https://www.uuidtools.com/generate" />

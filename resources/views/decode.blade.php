@@ -54,11 +54,7 @@
 			</div>
 		</div>
 
-
-
-		<div class="mb-3">
-			<div class="fb-like" data-href="https://www.uuidtools.com" data-width="" data-layout="standard" data-action="recommend" data-size="large" data-show-faces="false" data-share="true"></div>
-		</div>
+		@include('partials.fb-like')
 
 		<div class="row mb-3 mt-5">
 			<div class="col-md-8 order-12 order-md-1">
@@ -223,5 +219,18 @@
 			}
 		})
 	});
+</script>
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "UUID Decoder",
+		"item": "https://www.uuidtools.com/decode"
+	}]
+}
 </script>
 @endpush

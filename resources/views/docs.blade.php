@@ -143,24 +143,73 @@
 				</p>
 				<h4>Response</h4>
 				<p>
+				<div class="card bg-light mb-5">
 					<code>
-<pre>{
-	encode: {
-		STR: "b01eb720-171a-11ea-b949-73c91bba743d",
-		SIV: "234103610387309579079392911688732406845"
-	},
-	decode: {
-		variant: "DCE 1.1, ISO/IEC 11578:1996",
-		version: "1 (time and node based)",
-		content: {
-			time: "2019-12-05 04:49:57.961296.0 UTC",
-			clock: "14665 (usually random)",
-			node: "73:c9:1b:ba:74:3d (local multicast)"
-		}
-	}
+<pre class="mb-0">
+{
+    encode: {
+        STR: "b01eb720-171a-11ea-b949-73c91bba743d",
+        SIV: "234103610387309579079392911688732406845"
+    },
+    decode: {
+        variant: "DCE 1.1, ISO/IEC 11578:1996",
+        version: "1 (time and node based)",
+        content: {
+            time: "2019-12-05 04:49:57.961296.0 UTC",
+            clock: "14665 (usually random)",
+            node: "73:c9:1b:ba:74:3d (local multicast)"
+        }
+    }
 }</pre>
 					</code>
+				</div>
 				</p>
+
+
+				<hr>
+				<a href="#" name=cors></a>
+				<h3 class="mt-5 font-weight-bold">CORS Support</h3>
+
+				<p>
+					The API now supports <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target=_blank>CORS (Cross-origin resource sharing)</a>.
+					This means you can use this API on your own website.
+				</p>
+				<p>
+					<b>If you use our API on your website please link back to our site.</b>
+				</p>
+				<p>
+					Here is an example of how to use this API with jQuery.
+				</p>
+				<p>
+				<div class="card bg-light">
+					<code>
+<pre class="mb-0">
+&lt;html&gt;
+    &lt;body&gt;
+        ...
+    &lt;/body&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        $.ajax({
+            url: &quot;https://www.uuidtools.com/api/generate/v1&quot;,
+            success: function(data) {
+                // UUID Received!
+                console.log(data[0])
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                // Something when wrong.
+                // You may have exceeded the rate limit (60 requests per minute).
+                console.log(jqXHR, textStatus, errorThrown);
+            }
+        });
+    &lt;/script&gt;
+&lt;/html&gt;
+</pre>
+					</code>
+				</div>
+				</p>
+
+
 			</div>
 			<div class="col-md-4 order-6">
 				<div class="card bg-light mb-3">
@@ -175,6 +224,7 @@
 							<li><a href="#version-5">Version-5 UUID API</a>
 							<li><a href="#timestamp-first">Timestamp-first UUID API</a>
 							<li><a href="#decode">Decode UUID API</a>
+							<li><a href="#cors">CORS Support</a>
 						</ul>
 					</div>
 				</div>

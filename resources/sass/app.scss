@@ -58,6 +58,7 @@ code {
 	border:none;
 }
 
+
 .form-control-xl {
 	height: calc(1.5em + 1rem + 2px);
 	padding: 0.5rem 0;
@@ -78,6 +79,35 @@ code {
 @media (max-width: 575.98px) {
 	.form-control-xl {
 		font-size: 1rem;
+	}
+}
+.col-md-6 {
+	.form-control-xl {
+		height: calc(1.5em + 1rem + 2px);
+		padding: 0.5rem 0;
+		font-size: 1.5rem;
+		line-height: 1.5;
+		border-radius: 0.3rem;
+	}
+	@media (max-width: 1199.98px) {
+		.form-control-xl {
+			font-size: 1.25rem;
+		}
+	}
+	@media (max-width: 991.98px) {
+		.form-control-xl {
+			font-size: .85rem;
+		}
+	}
+	@media (max-width: 767.98px) {
+		.form-control-xl {
+			font-size: 1rem;
+		}
+	}
+	@media (max-width: 575.98px) {
+		.form-control-xl {
+			font-size: 1rem;
+		}
 	}
 }
 

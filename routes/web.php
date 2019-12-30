@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/',                   'GeneratorController@showGenerator');
+Route::get('/',                   'GeneratorController@home');
 Route::get('/generate',           'GeneratorController@index');
 Route::get('/generate/bulk',      'GeneratorController@bulk');
 Route::get('/generate/{version}', 'GeneratorController@showGenerator');

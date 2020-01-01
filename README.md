@@ -6,6 +6,8 @@ This project is written using [Laravel](https://laravel.com/).
 
 ## Status
 
+![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m784070030-33d5bd0a61953197a923eb4d)
+
 [status.uuidtools.com](https://status.uuidtools.com/)
 
 ## API Documentation

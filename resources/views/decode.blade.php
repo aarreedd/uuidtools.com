@@ -54,8 +54,6 @@
 			</div>
 		</div>
 
-		@include('partials.fb-like')
-
 		<div class="row mb-3 mt-5">
 			<div class="col-md-8 order-12 order-md-1">
 				<h3 class="mb-3 font-italic border-bottom">

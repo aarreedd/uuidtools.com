@@ -45,8 +45,6 @@
 
 				<hr>
 
-				@include('partials.fb-like')
-
 				<a href="#" name=version-1></a>
 				<h3 class="mt-5 font-weight-bold">Version-1 UUID API</h3>
 

@@ -29,7 +29,6 @@
 
 <!-- Global JS here -->
 <script src="{{ mix('js/app.js') }}"></script>
-<script src="{{ mix('js/fitty.js') }}"></script>
 
 @stack('scripts')
 

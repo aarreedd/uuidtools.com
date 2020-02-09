@@ -7,7 +7,7 @@
 @section('seo-meta')
 	<!-- Page-specific meta tags -->
 	<title>Online UUID Generator | UUIDTools.com</title>
-	<meta name="description" content='Generate UUIDs online instantly. Supports version-1, version-3, version-4 ("Random"), and version-5 UUIDs. See which version is right for your situation.'/>
+	<meta name="description" content='Generate individual or bulk UUIDs on-the-fly. Supports all major versions.'/>
 
 	<link rel="canonical" href="https://www.uuidtools.com" />
 

@@ -63,7 +63,7 @@
 				<a href="#" name=version-2></a>
 				<h3 class="mt-5 font-weight-bold">Version-2 UUID API</h3>
 				<p>
-					We do not provide a version-2 UUID generator. Learn more about the <a href="/uuid-verions-explained">different UUID versions</a>.
+					We do not provide a version-2 UUID generator. Learn more about the <a href="/uuid-versions-explained">different UUID versions</a>.
 				</p>
 
 				<hr>

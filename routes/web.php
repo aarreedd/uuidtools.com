@@ -16,6 +16,14 @@ Route::get('/generate',           'GeneratorController@index');
 Route::get('/generate/bulk',      'GeneratorController@bulk');
 Route::get('/generate/{version}', 'GeneratorController@showGenerator');
 
+// Alternate URLs
+Route::get('v1', 'GeneratorController@showV1');
+Route::get('v3', 'GeneratorController@showV3');
+Route::get('v4', 'GeneratorController@showV4');
+Route::get('v5', 'GeneratorController@showV5');
+Route::get('timestamp-first', 'GeneratorController@showTimestampFirst');
+
+
 Route::get('/generator/{anything?}', function($anything = null) {
 	return redirect('/generate/' . $anything);
 });

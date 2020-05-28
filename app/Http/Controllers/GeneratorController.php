@@ -19,7 +19,7 @@ class GeneratorController extends Controller
 		$count = Count::where('key', 'total-uuids')->first();
 		$totalUuids = optional($count)->value + Cache::get('total-uuids', 0);
 
-		return view('home', compact('otherOptions', 'totalUuids'));
+		return view('home', compact('totalUuids'));
 	}
 
 	function index()

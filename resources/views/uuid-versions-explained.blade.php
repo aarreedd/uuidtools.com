@@ -123,6 +123,10 @@
 					This is the most common UUID version.
 				</p>
 				<p>
+					Version-4, variant-1 UUIDs are used in the game Minecraft.
+					You can use our tool to <a href="/minecraft" target=_blank>generate Minecraft UUIDs</a> than can be used in-game.
+				</p>
+				<p>
 					Version-4, variant-2 is called a "GUID" on Microsoft systems.
 				</p>
 

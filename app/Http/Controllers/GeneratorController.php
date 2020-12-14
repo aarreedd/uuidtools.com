@@ -79,6 +79,15 @@ class GeneratorController extends Controller
 				'description' => 'Free online time-based UUID Generator. Create ordered, timestamp-first UUIDs instantly. Ordered UUIDs are designed for efficient storage in indexed database columns.',
 				'canonical' => 'https://www.uuidtools.com/timestamp-first',
 				'meta_title' => 'Online UUID (time-based) Generator | UUIDTools.com',
+			],
+			'minecraft' => [
+				'api' => 'v4',
+				'title' => 'Minecraft UUID Generator',
+				'dropdownSelected' => 'Minecraft UUID Generator',
+				'url' => '/generator/minecraft',
+				'description' => 'Minecraft uses UUIDs to uniquely identify separate instances and in-game objects. Minecraft uses Version 4, variant 1 UUIDs. This tool can be used to generate Minecraft UUIDs.',
+				'canonical' => 'https://www.uuidtools.com/minecraft',
+				'meta_title' => 'Minecraft UUID Generator | UUIDTools.com',
 			]
 		];
 
@@ -120,5 +129,9 @@ class GeneratorController extends Controller
 	function showTimestampFirst()
 	{
 		return $this->showGenerator('timestamp-first');
+	}
+	function showMinecraft()
+	{
+		return $this->showGenerator('minecraft');
 	}
 }

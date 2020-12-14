@@ -22,6 +22,7 @@ Route::get('v3', 'GeneratorController@showV3');
 Route::get('v4', 'GeneratorController@showV4');
 Route::get('v5', 'GeneratorController@showV5');
 Route::get('timestamp-first', 'GeneratorController@showTimestampFirst');
+Route::get('minecraft', 'GeneratorController@showMinecraft');
 
 
 Route::get('/generator/{anything?}', function($anything = null) {

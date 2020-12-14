@@ -21,6 +21,7 @@
 						<a class="dropdown-item" href="/generate/v4" title="Version-4 UUID Generator">Version-4</a>
 						<a class="dropdown-item" href="/generate/v5" title="Version-5 UUID Generator">Version-5</a>
 						<a class="dropdown-item" href="/generate/timestamp-first" title="Timestamp-First UUID Generator">Timestamp-First</a>
+						<a class="dropdown-item" href="/generate/minecraft" title="Minecraft UUID Generator">Minecraft UUIDs</a>
 					</div>
 				</li>
 				<li class="nav-item">

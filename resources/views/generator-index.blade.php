@@ -24,7 +24,7 @@
 			<li class="breadcrumb-item active" aria-current="page">Generate</li>
 		@endcomponent
 
-		<h1 class="border-bottom border-primary border-3 font-weight-bold"><i class="fas fa-fingerprint text-primary"></i> List of UUID Generators </h1>
+		<h1 class="border-bottom border-primary border-3 font-weight-bold"><i class="fas fa-fingerprint text-primary"></i> List of UUID Generators & Tools </h1>
 
 		<div class="row">
 
@@ -74,6 +74,16 @@
 						<h5 class="card-title font-weight-bold">Timestamp-First UUID Generator</h5>
 						<p class="card-text">Timestamp-first UUIDs are designed to be stored efficiently in indexed database columns.</p>
 						<a href="/generate/timestamp-first" class="btn btn-primary stretched-link">Timestamp-first UUIDs &raquo;</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 mt-3">
+				<div class="card bg-light-hover h-100">
+					<div class="card-body">
+						<h5 class="card-title font-weight-bold">Minecraft UUID Generator</h5>
+						<p class="card-text">Generate UUIDs for use in Minecraft.</p>
+						<a href="/generate/minecraft" class="btn btn-primary stretched-link">Minecraft UUID Generator &raquo;</a>
 					</div>
 				</div>
 			</div>

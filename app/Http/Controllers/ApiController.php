@@ -36,7 +36,6 @@ class ApiController extends Controller
 	function version3($namespace, $name)
 	{
 		$namespace = strtolower($namespace);
-		$name = strtolower($name);
 
 		$validator = Validator::make(compact('namespace', 'name'), [
 			'namespace' => ['required', new UuidNamespace],
@@ -87,7 +86,6 @@ class ApiController extends Controller
 	function version5($namespace, $name)
 	{
 		$namespace = strtolower($namespace);
-		$name = strtolower($name);
 
 		$validator = Validator::make(compact('namespace', 'name'), [
 			'namespace' => ['required', new UuidNamespace],

@@ -9,7 +9,7 @@
 	<title>Bulk UUID Generator | {{ config('app.name') }}</title>
 	<meta name="description" content="Bulk UUID Generator and API"/>
 
-	<link rel="canonical" href="https://www.uuidtools.com/generator/bulk" />
+	<link rel="canonical" href="https://www.uuidtools.com/generate/bulk" />
 @endsection
 
 {{-- ============================================================================== --}}
@@ -42,7 +42,7 @@
 									<option value="v4">Version-4</option>
 									<option value="timestamp-first">Timestamp-first</option>
 								</select>
-								<small id="versionHelp" class="form-text text-muted"><a href="/generator/v3">Version-3</a> and <a href="/generator/v5">version-5</a> are deterministic. They have no random component so all UUIDs would be the same. For this reason, they are not available in the bulk generator. <a href="/uuid-versions-explained">UUID versions explained &raquo;</a></small>
+								<small id="versionHelp" class="form-text text-muted"><a href="/generate/v3">Version-3</a> and <a href="/generate/v5">version-5</a> are deterministic. They have no random component so all UUIDs would be the same. For this reason, they are not available in the bulk generator. <a href="/uuid-versions-explained">UUID versions explained &raquo;</a></small>
 							</div>
 							<p class="error text-danger"></p>
 							<button type="submit" id="generate" class="btn btn-primary btn-block">Generate <i class="fas fa-redo-alt"></i></button>
@@ -63,10 +63,6 @@
 			</div>
 		</div>
 
-		<div class="mb-3">
-			<div class="fb-like" data-href="https://www.uuidtools.com" data-width="" data-layout="standard" data-action="recommend" data-size="large" data-show-faces="false" data-share="true"></div>
-		</div>
-
 		<div class="row mb-3 mt-5">
 			<div class="col-md-8 order-12 order-md-1">
 				<h3 class="mb-3 font-italic border-bottom">
@@ -79,12 +75,12 @@
 				<p>
 					You can download the list of generated UUIDs or use our API to generate UUIDs automatically.
 					There is a button above to copy the exact API call you need to generate bulk UUIDs.
-					You can be confident that the UUIDs generated will be globally unique. 
+					You can be confident that the UUIDs generated will be globally unique.
 					Statistically it is extraordinarily unlikely that our system will ever generate the same exact UUID twice.
 				</p>
 				<p>
-					You cannot generate <a href="/generator/v3">version-3</a> and <a href="/generator/v3">version-5</a> UUIDs in bulk because they require unique input for each UUID.
-					You must generate each one individually. 
+					You cannot generate <a href="/generate/v3">version-3</a> and <a href="/generate/v3">version-5</a> UUIDs in bulk because they require unique input for each UUID.
+					You must generate each one individually.
 				</p>
 
 			</div>
@@ -165,5 +161,23 @@
 		});
 	}
 
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "Generate Tools",
+		"item": "https://www.uuidtools.com/generate"
+	},
+	{
+		"@type": "ListItem",
+		"position": 2,
+		"name": "Bulk UUID Generator",
+		"item": "https://www.uuidtools.com/generate/bulk"
+	}]
+}
 </script>
 @endpush

@@ -31,7 +31,6 @@ Route::get("generate/timestamp-first/count/{count}", 'ApiController@timestampFir
 Route::get("/decode/{uuid}", 	'ApiController@decode');
 
 
-
 // https://www.uuidtool.com/api/generate/v1/10
 // https://www.uuidtool.com/api/generate/v1/count/10.json
 

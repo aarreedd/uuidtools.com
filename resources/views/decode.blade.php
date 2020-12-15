@@ -54,12 +54,6 @@
 			</div>
 		</div>
 
-
-
-		<div class="mb-3">
-			<div class="fb-like" data-href="https://www.uuidtools.com" data-width="" data-layout="standard" data-action="recommend" data-size="large" data-show-faces="false" data-share="true"></div>
-		</div>
-
 		<div class="row mb-3 mt-5">
 			<div class="col-md-8 order-12 order-md-1">
 				<h3 class="mb-3 font-italic border-bottom">
@@ -67,11 +61,11 @@
 				</h3>
 				<p>
 					Embedded in every UUID is the <u>version</u> and <u>variant</u> of the UUID.
-					Other information such as the time a UUID was generated can also be extracted in some cases.
-					Tool above extracts this information automatically.
+					Other information such as the time the UUID was generated can also be extracted in some cases.
+					The tool above extracts this information automatically.
 				</p>
 				<p>
-					The UUID version is represented by the 13th digit of a hexadecimal UUID string ("M" in the diagram below).
+					The UUID <i>version</i> is represented by the 13th digit of a hexadecimal UUID string ("M" in the diagram below).
 					The <i>variant</i> is represented in the 17th digit ("N" in the diagram below).
 				</p>
 				<figure class="figure border rounded border-secondary p-2">
@@ -96,7 +90,7 @@
 						<tr><td>6 - f, 0</td><td class="text-muted">version unknown</td></tr>
 					</tobdy>
 				</table>
-				<p class="mb-5"><i class="text-muted small">&dagger; RFC 4122 reserves version-2 for "DCE security" UUIDs however no details are provided. For this reason, we omit version-2 from our <a href="/generator">UUID generator</a>.</i></p>
+				<p class="mb-5"><i class="text-muted small">&dagger; RFC 4122 reserves version-2 for "DCE security" UUIDs however no details are provided. For this reason, we omit version-2 from our <a href="/generate">UUID generator</a>.</i></p>
 
 				<p>
 					The variant is slightly more complicated.
@@ -109,13 +103,13 @@
 				</p>
 				<p>
 					To determine the variant you look at the bits of the 17th hex digit in a UUID.
-					For example, the 4 binary digits begin "10" then the variant is "DCE 1.1, ISO/IEC 11578:1996".
+					For example, if the 4 binary digits begin "10" then the variant is "DCE 1.1, ISO/IEC 11578:1996".
 					If the binary digits begin "110" then the UUID is a "Microsoft GUID".
 					See the table below for full break down.
 				</p>
 
 				<p>
-					Only the number of leading "1"s matter.
+					Only the number of leading "1"s matters.
 					The bits after first 0 in the 17th hex digit are considered part of the "contents" of the UUID.
 					"Contents" is a combination of time and machine identifier for version-1 UUIDS,
 					for version-4 UUIDs contents is random,
@@ -223,5 +217,18 @@
 			}
 		})
 	});
+</script>
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "UUID Decoder",
+		"item": "https://www.uuidtools.com/decode"
+	}]
+}
 </script>
 @endpush

@@ -11,9 +11,11 @@
 			<i>Free Online UUID/GUID Generator Tool.</i>
 		</p>
 		<p>
-			<a href="/generator">UUID Generator</a> &bull;
-			<a href="/generator/bulk">Bulk UUID Generator</a> &bull;
+			<a href="/generate">UUID Generator</a> &bull;
+			<a href="/generate/bulk">Bulk UUID Generator</a> &bull;
 			<a href="/decode">UUID Decoder</a> &bull;
+			<a href="/docs">API Docs</a> &bull;
+			<a href="https://status.uuidtools.com/" target=_blank>API Status</a> &bull;
 			<a href="/terms">Terms of service</a> &bull;
 			<a href="/sitemap">Sitemap</a> &bull;
 			<a href="/contact">Contact us</a>
@@ -27,7 +29,6 @@
 
 <!-- Global JS here -->
 <script src="{{ mix('js/app.js') }}"></script>
-<script src="{{ mix('js/fitty.js') }}"></script>
 
 @stack('scripts')
 

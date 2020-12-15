@@ -11,28 +11,30 @@
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						UUID Generator
+						UUID Versions
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="/generator">UUID Generator Tool</a>
+						<a class="dropdown-item" href="/generate">List All Generators</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/generator/v1">Version-1 UUID</a>
-						<a class="dropdown-item" href="/generator/v3">Version-3 UUID</a>
-						<a class="dropdown-item" href="/generator/v4">Version-4 UUID</a>
-						<a class="dropdown-item" href="/generator/v5">Version-5 UUID</a>
-						<a class="dropdown-item" href="/generator/timestamp-first">Timestamp-first UUID</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/generator/bulk">Bulk UUID Generator</a>
+						<a class="dropdown-item" href="/generate/v1" title="Version-1 UUID Generator">Version-1</a>
+						<a class="dropdown-item" href="/generate/v3" title="Version-3 UUID Generator">Version-3</a>
+						<a class="dropdown-item" href="/generate/v4" title="Version-4 UUID Generator">Version-4</a>
+						<a class="dropdown-item" href="/generate/v5" title="Version-5 UUID Generator">Version-5</a>
+						<a class="dropdown-item" href="/generate/timestamp-first" title="Timestamp-First UUID Generator">Timestamp-First</a>
+						<a class="dropdown-item" href="/generate/minecraft" title="Minecraft UUID Generator">Minecraft UUIDs</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/decode">UUID Decoder </a>
+					<a class="nav-link" href="/generate/bulk">Bulk Generator</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/decode">Decode UUIDs</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/docs">API Docs </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/what-is-uuid">What is UUID? </a>
+					<a class="nav-link" href="/what-is-uuid">What's a UUID? </a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/uuid-versions-explained">Versions Explained </a>
@@ -43,7 +45,3 @@
 		</div>
 	</div>
 </nav>
-
-<!-- facebook like button -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>

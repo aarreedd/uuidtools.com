@@ -13,6 +13,7 @@
     "@fortawesome/fontawesome-free": "^5.11.2",
     "axios": "^0.19",
     "bootstrap": "^4.0.0",
+    "bootswatch": "^4.4.1",
     "browser-filesaver": "^1.1.1",
     "cross-env": "^5.1",
     "jquery": "^3.2",
@@ -26,7 +27,6 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "fitty": "^2.2.6",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
   }

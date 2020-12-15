@@ -6,7 +6,7 @@
 
 @section('seo-meta')
 	<!-- Page-specific meta tags -->
-	<title>Ultimate guide to Universal Unique Identifiers (UUID) | {{ config('app.name') }}</title>
+	<title>Complete guide to Universal Unique Identifiers (UUID) | {{ config('app.name') }}</title>
 
 	<link rel="canonical" href="https://www.uuidtools.com/what-is-uuid" />
 @endsection
@@ -19,7 +19,7 @@
 	<section class="jumbotron text-center">
 		<div class="container">
 			<h1 class="jumbotron-heading">What's a UUID?</h1>
-			<p class="lead text-muted">What are Universal Unique Identifiers and how to use them?</p>
+			<p class="lead text-muted">What are Universal Unique Identifiers and how are they used?</p>
 		</div>
 	</section>
 

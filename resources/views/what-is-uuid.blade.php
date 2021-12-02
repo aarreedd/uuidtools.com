@@ -42,7 +42,7 @@
 				<p>
 					There are several <a href="/uuid-versions-explained">UUID versions</a> with slightly different purposes.
 					In UUID version-4, which is completely random, there are approximately 5.3 x 10<sup>36</sup> possible UUIDs.
-					This number is so large that if you were to generate 1 billion UUIDs per second for 85 you have a 50% chance of creating a duplicate.
+					This number is so large that if you were to generate 1 billion UUIDs per second for 85 years you have a 50% chance of creating a duplicate.
 				</p>
 				<p>
 					The chances of a duplicate UUID are so low it is safe to assume each ID will be unique.

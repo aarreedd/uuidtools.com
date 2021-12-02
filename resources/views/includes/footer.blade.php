@@ -15,7 +15,6 @@
 			<a href="/generate/bulk">Bulk UUID Generator</a> &bull;
 			<a href="/decode">UUID Decoder</a> &bull;
 			<a href="/docs">API Docs</a> &bull;
-			<a href="https://status.uuidtools.com/" target=_blank>API Status</a> &bull;
 			<a href="/terms">Terms of service</a> &bull;
 			<a href="/sitemap">Sitemap</a> &bull;
 			<a href="/contact">Contact us</a>

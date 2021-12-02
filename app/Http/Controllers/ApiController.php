@@ -47,6 +47,8 @@ class ApiController extends Controller
 			return response()->json(['errors' => $validator->errors()], 400);
 		}
 
+		$name = $this->base64Decode($name);
+
 		// Get predefined namespace
 		if ($namespace == "ns:dns") {
 			$namespace = Uuid::NAMESPACE_DNS;
@@ -96,6 +98,8 @@ class ApiController extends Controller
 		{
 			return response()->json(['errors' => $validator->errors()], 400);
 		}
+
+		$name = $this->base64Decode($name);
 
 		// Get predefined namespace
 		if ($namespace == "ns:dns") {
@@ -181,5 +185,21 @@ class ApiController extends Controller
 		}
 
 		return $output;
+	}
+
+	/**
+	 * If string starts with "base64:" then
+	 * treat it as a base 64 string and decode it.
+	 * This is a solution to https://github.com/aarreedd/uuidtools.com/issues/30
+	 */
+	private function base64Decode($name)
+	{
+		if (Str::startsWith(strtolower($name), 'base64:'))
+		{
+			$name = explode(':', $name, 2)[1];
+			$name = base64_decode($name);
+		}
+
+		return $name;
 	}
 }

@@ -81,7 +81,14 @@
 				<p>
 					<code><pre>https://www.uuidtools.com/api/generate/v3/namespace/b01eb720-171a-11ea-b949-73c91bba743d/name/anything-goes-here</pre></code>
 				</p>
-
+				<p>
+					You can also <a href="https://www.base64encode.org/" target=_blank>base64 encode</a> your "name" parameter.
+					This avoids some problems related to URL encoding certain characters.
+					(Thank you to those who reported this issue on <a href="https://github.com/aarreedd/uuidtools.com/issues/30" target=_blank>Github</a>)
+				</p>
+				<p>
+					<code><pre>https://www.uuidtools.com/api/generate/v3/namespace/ns:url/name/base64:aHR0cHM6Ly9pZC5icmFzaWwuaW8vY29tcGFueS92MS8wNzcyNTIxNS8=</pre></code>
+				</p>
 
 				<hr>
 				<a href="#" name=version-4></a>
@@ -111,6 +118,15 @@
 				</p>
 				<p>
 					<code><pre>https://www.uuidtools.com/api/generate/v5/namespace/b01eb720-171a-11ea-b949-73c91bba743d/name/anything-goes-here</pre></code>
+				</p>
+
+				<p>
+					You can also <a href="https://www.base64encode.org/" target=_blank>base64 encode</a> your "name" parameter.
+					This avoids some problems related to URL encoding certain characters.
+					(Thank you to those who reported this issue on <a href="https://github.com/aarreedd/uuidtools.com/issues/30" target=_blank>Github</a>)
+				</p>
+				<p>
+					<code><pre>https://www.uuidtools.com/api/generate/v5/namespace/ns:url/name/base64:aHR0cHM6Ly9pZC5icmFzaWwuaW8vY29tcGFueS92MS8wNzcyNTIxNS8=</pre></code>
 				</p>
 
 				<hr>

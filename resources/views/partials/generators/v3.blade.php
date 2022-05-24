@@ -133,7 +133,7 @@
 	function get_results() {
 		lastNamespace = getNamespace();
 		lastName = $('#name').val();
-		url = "/api/generate/v5/namespace/" + getNamespace() + "/name/base64:" + btoa($('#name').val());
+		url = "/api/generate/v3/namespace/" + getNamespace() + "/name/base64:" + btoa($('#name').val());
 		$('#api-copy-input').val('https://www.uuidtools.com' + url);
 
 		$.ajax({

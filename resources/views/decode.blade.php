@@ -79,18 +79,17 @@
 				</p>
 
 				<h4 class="mt-5">Version Digit ("M")</h4>
-				<table class="table text-center table-bordered">
+				<table class="table text-center table-bordered mb-5">
 					<thead><tr><th>Hex Digit</th><th>UUID Version</th></tr></thead>
 					<tobdy>
 						<tr><td>1</td><td>version-1</td></tr>
-						<tr><td>2</td><td>version-2 <span class="text-muted">&dagger;</span></tr>
+						<tr><td>2</td><td>version-2</tr>
 						<tr><td>3</td><td>version-3</td></tr>
 						<tr><td>4</td><td>version-4</td></tr>
 						<tr><td>5</td><td>version-5</td></tr>
 						<tr><td>6 - f, 0</td><td class="text-muted">version unknown</td></tr>
 					</tobdy>
 				</table>
-				<p class="mb-5"><i class="text-muted small">&dagger; RFC 4122 reserves version-2 for "DCE security" UUIDs however no details are provided. For this reason, we omit version-2 from our <a href="/generate">UUID generator</a>.</i></p>
 
 				<p>
 					The variant is slightly more complicated.

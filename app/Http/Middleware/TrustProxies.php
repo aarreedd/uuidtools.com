@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use Fideloper\Proxy\TrustProxies as Middleware;
+use Illuminate\Http\Middleware\TrustProxies as Middleware;
 use Illuminate\Http\Request;
 
 class TrustProxies extends Middleware
@@ -25,7 +25,8 @@ class TrustProxies extends Middleware
         '197.234.240.0/22',
         '198.41.128.0/17',
         '162.158.0.0/15',
-        '104.16.0.0/12',
+        '104.16.0.0/13',
+        '104.24.0.0/14',
         '172.64.0.0/13',
         '131.0.72.0/22',
         '2400:cb00::/32',
@@ -42,5 +43,10 @@ class TrustProxies extends Middleware
      *
      * @var int
      */
-    protected $headers = Request::HEADER_X_FORWARDED_ALL;
+    protected $headers =
+        Request::HEADER_X_FORWARDED_FOR |
+        Request::HEADER_X_FORWARDED_HOST |
+        Request::HEADER_X_FORWARDED_PORT |
+        Request::HEADER_X_FORWARDED_PROTO |
+        Request::HEADER_X_FORWARDED_AWS_ELB;
 }

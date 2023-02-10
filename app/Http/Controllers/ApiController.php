@@ -24,13 +24,37 @@ class ApiController extends Controller
 			return response()->json(['errors' => $validator->errors()], 400);
 		}
 
-		ob_start();
-		passthru("uuid -v1 -m -n ".escapeshellarg($count));
-		$output = trim(ob_get_clean());
+		$output = [];
+		for ($i = 0; $i < $count; $i++)
+		{
+			$output[] = (string) Uuid::uuid1();
+		}
 
 		Cache::increment('total-uuids', $count);
 
-		return explode(PHP_EOL, $output);
+		return $output;
+	}
+
+	function version2($count = 1)
+	{
+		$validator = Validator::make(compact('count'), [
+			'count' => 'numeric|between:1,100',
+		]);
+
+		if ($validator->fails())
+		{
+			return response()->json(['errors' => $validator->errors()], 400);
+		}
+
+		$output = [];
+		for ($i = 0; $i < $count; $i++)
+		{
+			$output[] = (string) Uuid::uuid2(Uuid::DCE_DOMAIN_PERSON);
+		}
+
+		Cache::increment('total-uuids', $count);
+
+		return $output;
 	}
 
 	function version3($namespace, $name)
@@ -76,13 +100,15 @@ class ApiController extends Controller
 			return response()->json(['errors' => $validator->errors()], 400);
 		}
 
-		ob_start();
-		passthru("uuid -v4 -n ".escapeshellarg($count));
-		$output = trim(ob_get_clean());
+		$output = [];
+		for ($i = 0; $i < $count; $i++)
+		{
+			$output[] = (string) Uuid::uuid4();
+		}
 
 		Cache::increment('total-uuids', $count);
 
-		return explode(PHP_EOL, $output);
+		return $output;
 	}
 
 	function version5($namespace, $name)

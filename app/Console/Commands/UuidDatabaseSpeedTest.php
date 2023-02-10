@@ -85,5 +85,7 @@ class UuidDatabaseSpeedTest extends Command
         $bar->finish();
         $duration = microtime(true) - $start;
         $this->info("\nTimestamp-first UUIDs Duration: {$duration}s");
+
+        return 0;
     }
 }

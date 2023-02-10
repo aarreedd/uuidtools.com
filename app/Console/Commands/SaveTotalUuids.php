@@ -53,5 +53,7 @@ class SaveTotalUuids extends Command
 		$count->save();
 
 		$this->info("Total UUIDs: " . $count->value);
+
+		return 0;
 	}
 }

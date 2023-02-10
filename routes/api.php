@@ -17,6 +17,9 @@ use Illuminate\Http\Request;
 Route::get("generate/v1", 				'ApiController@version1');
 Route::get("generate/v1/count/{count}", 'ApiController@version1');
 
+Route::get("generate/v2/",              'ApiController@version2');
+Route::get("generate/v2/count/{count}", 'ApiController@version2');
+
 Route::get("generate/v3/namespace/{namespace}/name/{name}", 'ApiController@version3')->where('name', '(.*)');
 
 Route::get("generate/v4", 				'ApiController@version4');

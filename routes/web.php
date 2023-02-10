@@ -18,6 +18,7 @@ Route::get('/generate/{version}', 'GeneratorController@showGenerator');
 
 // Alternate URLs
 Route::get('v1', 'GeneratorController@showV1');
+Route::get('v3', 'GeneratorController@showV2');
 Route::get('v3', 'GeneratorController@showV3');
 Route::get('v4', 'GeneratorController@showV4');
 Route::get('v5', 'GeneratorController@showV5');

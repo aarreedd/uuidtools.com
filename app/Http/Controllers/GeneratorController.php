@@ -44,6 +44,15 @@ class GeneratorController extends Controller
 				'canonical' => 'https://www.uuidtools.com/v1',
 				'meta_title' => 'Online UUID (v1) Generator | UUIDTools.com',
 			],
+			'v2' => [
+				'api' => 'v2',
+				'title' => 'UUID Version-2 Generator: DCE Security',
+				'dropdownSelected' => 'Version-2 UUID ("DCE Security")',
+				'url' => '/generator/v2',
+				'description' => 'Free online UUID v2 Generator (DCE Security). Create version-2 UUIDs (DCE Security). V2 UUIDs are based on the time (lossy), local machine\'s MAC address, and local user ID or group ID. Version 2 UUIDs are not widely used due to some limitations.',
+				'canonical' => 'https://www.uuidtools.com/v2',
+				'meta_title' => 'Online UUID (v2) Generator | UUIDTools.com',
+			],
 			'v3' => [
 				'api' => 'v3',
 				'title' => 'UUID Version-3 Generator',
@@ -97,7 +106,6 @@ class GeneratorController extends Controller
 			abort(404);
 		}
 
-
 		$version = (object) $versions[$version];
 
 		$otherOptions = collect($versions)->forget(['default'])
@@ -114,6 +122,10 @@ class GeneratorController extends Controller
 	function showV1()
 	{
 		return $this->showGenerator('v1');
+	}
+	function showV2()
+	{
+		return $this->showGenerator('v2');
 	}
 	function showV3()
 	{

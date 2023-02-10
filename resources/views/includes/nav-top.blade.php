@@ -17,6 +17,7 @@
 						<a class="dropdown-item" href="/generate">List All Generators</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="/generate/v1" title="Version-1 UUID Generator">Version-1</a>
+						<a class="dropdown-item" href="/generate/v2" title="Version-2 UUID Generator: DCE Security">Version-2</a>
 						<a class="dropdown-item" href="/generate/v3" title="Version-3 UUID Generator">Version-3</a>
 						<a class="dropdown-item" href="/generate/v4" title="Version-4 UUID Generator">Version-4</a>
 						<a class="dropdown-item" href="/generate/v5" title="Version-5 UUID Generator">Version-5</a>

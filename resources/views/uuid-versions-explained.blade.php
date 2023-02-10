@@ -37,9 +37,7 @@
 					For more details, see the official <a href="https://tools.ietf.org/html/rfc4122">UUID RFC 4122</a>.
 				</p>
 
-
-				<a href="#" name=version-1></a>
-				<h2 class="mt-4">UUID Version-1</h2>
+				<h2 class="mt-4" id="version-1">UUID Version-1</h2>
 
 				<p>
 					<b>Version-1 is based on the current time and the MAC address for the computer or "node" generating the UUID.</b>
@@ -68,15 +66,25 @@
 					<figcaption class="figure-caption">Records Layout for UUID version-1.</figcaption>
 				</figure>
 
-				<a href="#" name=version-2></a>
-				<h2 class="mt-4">UUID Version-2</h2>
+				<h2 class="mt-4" id="version-2">UUID Version-2</h2>
 				<p>
-					Version-2 is called "DCE security" UUIDs in RFC 4122. Further details are not provided in the official RFC so our implementation omits version-2.
-					<a href="https://pubs.opengroup.org/onlinepubs/9696989899/chap5.htm#tagcjh_08_02_01_01">Version-2 specifications</a> are, however, published by DCE.
+					Version-2 is called "DCE security" UUIDs in RFC 4122.
+					<a href="https://pubs.opengroup.org/onlinepubs/9696989899/chap5.htm#tagcjh_08_02_01_01">Version-2 specifications</a> are published by DCE.
+					<a href="/v2">Generate Version-2 UUIDs</a>.
+				</p>
+				<p>
+					Version-2 UUIDs are not used very widely because of several problems with the format.
+					These UUIDs can be useful because they contain data about when, where, and by whom the UUIDs were generated.
+					This use a useful attribute in some systems. However, it doesn't make sense form an online generation tool like uuidtools.com.
+				</p>
+				<p>
+					V2 UUIDs include the MAC address of the generator, lossy timestamp, and an account ID such as user ID or group ID on the local computer.
+					Because of the information included in the UUID, there is limited space for randomness.
+					The clock section of the UUID only advances every 429.47 seconds (~7 minutes).
+					During any 7 minute period, there are only 64 available different UUIDs!
 				</p>
 
-				<a href="#" name=version-3-version-5></a>
-				<h2 class="mt-4">UUID Version-3 vs UUID Version-5</h2>
+				<h2 class="mt-4" id="version-3-version-5">UUID Version-3 vs UUID Version-5</h2>
 
 				<p>
 					Version-3 and version-5 are generated based on a "namespace" and unique "name".
@@ -115,8 +123,7 @@
 					When using our <a href="/generate/v3">version-3</a> or <a href="/generate/v5">version-5</a> UUID generators you will be asked to enter a "namespace" (or pre-defined UUID identifier) and "name".
 				</p>
 
-				<a href="#" name=version-4></a>
-				<h2 class="mt-4">UUID Version-4</h2>
+				<h2 class="mt-4" id="version-4">UUID Version-4</h2>
 				<p>
 					<b>Version-4 UUIDs are randomly generated.</b>
 					There are over 5.3 x 10<sup>36</sup> unique v4 UUIDs.
@@ -128,10 +135,12 @@
 				</p>
 				<p>
 					Version-4, variant-2 is called a "GUID" on Microsoft systems.
+					GUIDs are a Microsoft implementation of DCE UUIDs.
+					GUIDs mostly conform to RFC4122.
+					The only difference is in the <i>byte order</i>.
 				</p>
 
-				<a href="#" name=timestamp-first></a>
-				<h2 class="mt-4">Timestamp-first UUIDs</h2>
+				<h2 class="mt-4" id="timestamp-first">Timestamp-first UUIDs</h2>
 				<p>
 					Timestamp-first are not mentioned in the UUID RFC; however, they are a common variation of version-4 UUIDs.
 					This format is sometimes called "Ordered UUIDs" or "COMB" (combined time-GUID).
@@ -152,8 +161,7 @@
 					If you are using UUIDs as a primary key in a database you should use timestamp-first UUIDs.
 				</p>
 
-				<a href="#" name=nil-uuid></a>
-				<h2 class="mt-4">Nil UUIDs</h2>
+				<h2 class="mt-4" id="nil-uuid">Nil UUIDs</h2>
 				<p>
 					 This special case UUID is guaranteed to <u>not</u> be unique. <b>The Nil UUID is all zeros: 00000000-0000-0000-0000-000000000000</b>
 				</p>

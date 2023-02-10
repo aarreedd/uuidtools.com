@@ -7,8 +7,6 @@
 @section('seo-meta')
 	<!-- Page-specific meta tags -->
 	<title>{{ $version->meta_title }}</title>
-	<meta name="description" content="{{ $version->description }}"/>
-
 	<link rel="canonical" href="{{ $version->canonical }}" />
 
 @endsection
